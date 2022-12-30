@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+	<title>M&aacute;scara para input com Jquery | Clube da Viagem</title>
+	<!-- link rel="stylesheet" type="text/css" media="all" href="css/style.css" /-->
+	<script type="text/javascript" src="js/1.5.2.js"></script>
+	<script type="text/javascript" src="js/jquery.maskedinput-1.3.min.js"></script>
+	<script>
+		jQuery(function($){
+		       $("#cpf").mask("999.999.999-99");
+		       $("#rg").mask("99.999.999-9");
+		       $("#tel").mask("(999) 99999-9999");
+		       $("#dt").mask("99/99/9999");
+			   $("#pass").mask("*******");
+			   $("#lt").mask("aaaaaaaaaaaaa");
+		});
+	</script>
+</head>
+<body>
+	<section>
+		<article>
+			<form id="formulario" method="post" action="" >				
+				<fieldset>
+				<legend>M&aacute;scara para inputs</legend>
+					<label for="cpf">CPF:</label>
+					<input class="meuform" type="text" id="cpf" /><br/><br/>
+					
+					<label for="rg">RG:</label>
+					<input class="meuform" type="text" id="rg" /><br/><br/>
+					
+					<label for="tel">Telefone:</label>
+					<input  type="text" id="tel" /><br/><br/>
+					
+					<label for="pass">Letra e Num:</label>
+					<input type="text" id="pass" /><br/><br/>
+					
+					<label for="dt">Data:</label>
+					<input class="meuform" type="text" id="dt" /><br/><br/>
+					
+					<label for="lt">Letras:</label>
+					<input class="meuform" type="text" id="lt" /><br/><br/>
+				</fieldset>	
+			</form>
+		</article>
+	</section>
+</body>
+</html>
